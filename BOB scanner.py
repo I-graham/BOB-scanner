@@ -8,7 +8,7 @@ def isNew(string):
         return False
 
 def isSoph(string):
-    if re.match(r"ELIGIBLE: ALL STUDENTS", string.upper()) or re.match(r"ELIGIBLE:.*SOPHOMORE", string.upper()) or re.match(r"ELIGIBLE:.*10TH GRADE", string.upper()):
+    if re.match(r"ELIGIBLE: ALL.*", string.upper()) or re.match(r"ELIGIBLE:.*SOPHOMORE", string.upper()) or re.match(r"ELIGIBLE:.*10TH GRADE", string.upper()):
         return True
     else:
         return False
